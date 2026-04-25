@@ -1,11 +1,9 @@
 import './style.css'
 
-// ── Lenis Smooth Scrolling ──
-// We are using the Lenis library loaded via CDN in index.html for buttery smooth scrolling
 if (typeof Lenis !== 'undefined') {
   const lenis = new Lenis({
     duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     direction: 'vertical',
     gestureDirection: 'vertical',
     smooth: true,
@@ -23,7 +21,6 @@ if (typeof Lenis !== 'undefined') {
   requestAnimationFrame(raf)
 }
 
-// ── Navbar Scroll State ──
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
@@ -33,7 +30,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ── Reveal Animations on Scroll ──
 const revealElements = document.querySelectorAll('.reveal');
 
 const revealCallback = (entries, observer) => {
@@ -54,7 +50,6 @@ const revealOptions = {
 const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
 revealElements.forEach(el => revealObserver.observe(el));
 
-// ── Spline Fallback / Hide Loading ──
 const spline = document.getElementById('spline-scene');
 if (spline) {
   spline.addEventListener('load', () => {
