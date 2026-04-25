@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AUTOBOTS INC. — Next-Gen Robot Sales">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>AUTOBOTS INC. — Catalog</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Spline Runtime -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <!-- Lenis for Smooth Scrolling -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  </head>
+  <body>
+
+    <!-- ══ NAV ══════════════════════════════════════════ -->
+    <nav id="navbar" class="clean-nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" id="nav-logo">
+          <svg class="logo-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          AUTOBOTS INC.
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#models" class="nav-link">CATALOG</a></li>
+          <li><a href="#technology" class="nav-link">TECHNOLOGY</a></li>
+          <li><a href="#support" class="nav-link">SUPPORT</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══ HERO (CONTAINED SPLINE) ════════════════════════ -->
+    <section id="hero-contained">
+      <div class="container hero-container">
+        <div class="spline-card">
+          <!-- Spline 3D Scene -->
+          <spline-viewer
+            id="spline-scene"
+            url="https://prod.spline.design/K19duDYQUkQttP6F/scene.splinecode"
+            loading-anim-type="spinner-small-dark"
+          ></spline-viewer>
+        </div>
+        <div class="hero-footer">
+          <span class="gen-tag">GENERATION 4</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ MANIFESTO ═════════════════════════════════════ -->
+    <section class="manifesto-section reveal">
+      <div class="container container-narrow">
+        <h2 class="huge-text">THE NEXT ERA OF LABOR.</h2>
+        <p class="manifesto-copy">
+          Designed for maximum utility. Engineered for complete autonomy. 
+          Our Generation 4 robots bridge the gap between human instruction and flawless execution.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ CATALOG / MODELS ══════════════════════════════ -->
+    <section id="models" class="catalog-section">
+      <div class="container">
+        
+        <!-- Tesla Robot 1 -->
+        <div class="product-row reveal">
+          <div class="product-info">
+            <span class="product-badge">GENERAL PURPOSE</span>
+            <h3 class="product-title">OPTIMUS – G1</h3>
+            <p class="product-desc">
+              Capable of navigating complex real-world environments. 
+              Built with custom actuators and a neural net trained on billions of visual frames.
+            </p>
+            <ul class="product-specs-list">
+              <li><span>Payload:</span> 20 kg</li>
+              <li><span>Speed:</span> 5 mph</li>
+              <li><span>Battery:</span> 2.3 kWh</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-4">Order Now</a>
+          </div>
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Optimus G1 Head Profile" class="product-img">
+          </div>
+        </div>
+
+        <!-- Tesla Robot 2 -->
+        <div class="product-row reverse reveal">
+          <div class="product-info">
+            <span class="product-badge">INDUSTRIAL</span>
+            <h3 class="product-title">NEXUS – HEAVY</h3>
+            <p class="product-desc">
+              Reinforced chassis and hyper-torque joints for manufacturing and logistics. 
+              Integrated directly with your warehouse management systems.
+            </p>
+            <ul class="product-specs-list">
+              <li><span>Payload:</span> 65 kg</li>
+              <li><span>Speed:</span> 3 mph</li>
+              <li><span>Battery:</span> 4.5 kWh</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-4">Order Now</a>
+          </div>
+          <div class="product-image-wrap">
+            <img src="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Nexus Heavy Industrial Robot" class="product-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ TECHNOLOGY ════════════════════════════════════ -->
+    <section id="technology" class="technology-section">
+      <div class="tech-sticky-container">
+        <!-- Sticky left side -->
+        <div class="tech-left">
+          <h2 class="huge-text light-text">TECHNOLOGY</h2>
+          <p class="tech-subtext">Powered by our custom FSD inference chips. Processing visual data locally in real-time without relying on cloud connectivity.</p>
+        </div>
+        <!-- Scrolling right side -->
+        <div class="tech-right">
+          
+          <div class="tech-card reveal">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Brain" class="tech-card-img">
+            <div class="tech-card-body">
+              <h4>Neural Brain</h4>
+              <p>Dual 32-core neural processors capable of 120 trillion operations per second. Full spatial mapping updated at 60hz.</p>
+            </div>
+          </div>
+
+          <div class="tech-card reveal">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Actuators" class="tech-card-img">
+            <div class="tech-card-body">
+              <h4>Custom Actuators</h4>
+              <p>28 degrees of freedom in the main body. 11 degrees of freedom per hand. Built to mimic human dexterity perfectly.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SUPPORT ═══════════════════════════════════════ -->
+    <section id="support" class="support-section">
+      <div class="container container-narrow">
+        <h2 class="huge-text">SUPPORT & SERVICE</h2>
+        <p class="manifesto-copy">
+          Every Autobot comes with 24/7 over-the-air monitoring and a 48-hour hardware replacement guarantee.
+        </p>
+        
+        <div class="support-grid reveal">
+          <a href="#" class="support-item">
+            <div class="s-icon">📘</div>
+            <div class="s-text">
+              <h4>Documentation</h4>
+              <p>Operating manuals, API references, and safety guidelines.</p>
+            </div>
+          </a>
+          <a href="#" class="support-item">
+            <div class="s-icon">🛠️</div>
+            <div class="s-text">
+              <h4>Service Centers</h4>
+              <p>Find authorized repair facilities near you.</p>
+            </div>
+          </a>
+          <a href="#" class="support-item">
+            <div class="s-icon">💬</div>
+            <div class="s-text">
+              <h4>Live Diagnostics</h4>
+              <p>Connect to an engineer for remote unit diagnosis.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-box reveal">
+          <h3>Need direct assistance?</h3>
+          <p>Contact our deployment specialists to configure a fleet for your business.</p>
+          <a href="mailto:support@autobots.inc" class="btn btn-outline">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ═════════════════════════════════════════ -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <svg class="logo-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              AUTOBOTS INC.
+            </a>
+            <p class="footer-copy">Accelerating the world's transition to automated labor.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h5>Products</h5>
+              <a href="#models">Optimus</a>
+              <a href="#models">Nexus</a>
+            </div>
+            <div class="footer-col">
+              <h5>Company</h5>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+            </div>
+            <div class="footer-col">
+              <h5>Legal</h5>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
